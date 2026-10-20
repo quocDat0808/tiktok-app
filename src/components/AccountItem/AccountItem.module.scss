@@ -1,0 +1,37 @@
+.wrapper {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 8px;
+    border-radius: 4px;
+
+    &:hover {
+        background: var(--gray-hover);
+    }
+}
+
+.info {
+    overflow: hidden;
+}
+
+.nickname {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    font-size: 16px;
+    font-weight: 700;
+
+    span {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+    }
+}
+
+.name {
+    overflow: hidden;
+    color: var(--text-light);
+    font-size: 13px;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
