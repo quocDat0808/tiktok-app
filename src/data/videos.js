@@ -1,0 +1,88 @@
+// Video mẫu công khai dùng để test (MDN, test-videos.co.uk)
+const MDN = 'https://interactive-examples.mdn.mozilla.net/media/cc0-videos';
+const TEST = 'https://test-videos.co.uk/vids';
+
+const videos = [
+    {
+        id: 1,
+        userId: 1,
+        description: 'Bún bò Huế chuẩn vị tại nhà, ai cũng làm được #nauan #bunbo',
+        music: 'nhạc nền - Minh Anh Nấu Ăn',
+        src: `${TEST}/jellyfish/mp4/h264/360/Jellyfish_360_10s_1MB.mp4`,
+        likes: 152000,
+        comments: 1834,
+        shares: 920,
+    },
+    {
+        id: 2,
+        userId: 3,
+        description: 'Hoàng hôn ở Đà Lạt đẹp không tả nổi 🌅 #dulich #dalat',
+        music: 'Chill Lofi - Linh Đi Đâu Đó',
+        src: `${TEST}/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4`,
+        likes: 98400,
+        comments: 1205,
+        shares: 3400,
+    },
+    {
+        id: 3,
+        userId: 2,
+        description: 'Học React trong 1 tuần có được không? Xem hết video nhé #reactjs #code',
+        music: 'nhạc nền - Hoàng Dev',
+        src: `${MDN}/friday.mp4`,
+        likes: 12300,
+        comments: 432,
+        shares: 210,
+    },
+    {
+        id: 4,
+        userId: 5,
+        description: 'Cover theo yêu cầu của mọi người đây 🎶 #cover #music',
+        music: 'Bản cover - Mai Cover',
+        src: `${TEST}/sintel/mp4/h264/360/Sintel_360_10s_1MB.mp4`,
+        likes: 532000,
+        comments: 8900,
+        shares: 12000,
+    },
+    {
+        id: 5,
+        userId: 4,
+        description: 'Bài tập bụng 5 phút mỗi sáng 💪 #gym #fitness',
+        music: 'Workout Beat - Tuấn Gym',
+        src: `${TEST}/bigbuckbunny/mp4/h264/360/Big_Buck_Bunny_360_10s_1MB.mp4`,
+        likes: 23100,
+        comments: 310,
+        shares: 870,
+    },
+    {
+        id: 6,
+        userId: 6,
+        description: 'Khi bạn quên làm bài tập về nhà 😂 #funny #haihuoc',
+        music: 'nhạc nền - Khoa Hài Hước',
+        src: `${MDN}/flower.mp4`,
+        likes: 8700,
+        comments: 120,
+        shares: 45,
+    },
+    {
+        id: 7,
+        userId: 1,
+        description: 'Cơm tấm sườn bì chả 15 phút ⏱️ #nauan #comtam',
+        music: 'nhạc nền - Minh Anh Nấu Ăn',
+        src: `${TEST}/jellyfish/mp4/h264/360/Jellyfish_360_10s_1MB.mp4`,
+        likes: 76500,
+        comments: 980,
+        shares: 640,
+    },
+    {
+        id: 8,
+        userId: 3,
+        description: 'Một ngày ở Hội An 🏮 #dulich #hoian',
+        music: 'Chill Lofi - Linh Đi Đâu Đó',
+        src: `${MDN}/flower.mp4`,
+        likes: 64300,
+        comments: 702,
+        shares: 1500,
+    },
+];
+
+export default videos;

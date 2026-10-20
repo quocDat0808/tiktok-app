@@ -1,20 +1,32 @@
-import Header from '~/components/Header/Header';
-import Sidebar from '~/components/Sidebar/Sidebar';
-
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { FollowProvider } from '~/context/FollowContext';
+import DefaultLayout from '~/layouts/DefaultLayout/DefaultLayout';
+import routes from '~/routes';
+import './App.css';
 
 function App() {
     return (
-        <div className="app">
-            <Header />
+        <FollowProvider>
+            <BrowserRouter>
+                <Routes>
+                    {routes.map((route) => {
+                        const Page = route.component;
 
-            <div className="container">
-                <Sidebar />
-
-                <div className="content">
-                    <h2>Danh sách video</h2>
-                </div>
-            </div>
-        </div>
+                        return (
+                            <Route
+                                key={route.path}
+                                path={route.path}
+                                element={
+                                    <DefaultLayout>
+                                        <Page />
+                                    </DefaultLayout>
+                                }
+                            />
+                        );
+                    })}
+                </Routes>
+            </BrowserRouter>
+        </FollowProvider>
     );
 }
 
